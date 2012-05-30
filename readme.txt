@@ -14,8 +14,8 @@ Contributors: Maxime Dizerens
 Donate link: http://www.gunners.fr/
 Tags: phpleague, football, sport, league, championship, soccer, handball, volleyball, basketball, hockey, sports, leagues
 Requires at least: 3.3
-Tested up to: 3.3.1
-Stable tag: 1.4.6.1
+Tested up to: 3.3.2
+Stable tag: 1.4.6
 
 PHPLeague lets you managing your leagues without any hassles.
 
@@ -40,7 +40,6 @@ Requires WordPress 3.3+ and PHP 5.2+.
 
 **Coming features**
 
-* A prediction module
 * More and more statistics
 * More and more sports
 * A complete team dashboard section
