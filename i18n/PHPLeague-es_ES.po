@@ -16,7 +16,7 @@ msgstr ""
 
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/phpleague.php:162
 msgid "Permission insufficient to run PHPLeague!"
-msgstr "Permisos insuficientes para correr PHPLeague!"
+msgstr "Permisos insuficientes para ejecutar el programa!"
 
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/assets/js/tinymce/window.php:56
 msgid "PHPLeague"
@@ -35,13 +35,13 @@ msgstr "Tablas"
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/inc/admin/league_team.php:22
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/inc/admin/overview.php:163
 msgid "Fixtures"
-msgstr "Calendarios"
+msgstr "Jornadas"
 
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/assets/js/tinymce/window.php:70
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/assets/js/tinymce/window.php:145
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/inc/admin/league_fixture.php:129
 msgid "Fixture"
-msgstr "Calendario"
+msgstr "Jornada"
 
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/assets/js/tinymce/window.php:71
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/inc/admin/about.php:16
@@ -1235,7 +1235,7 @@ msgstr "Resultado"
 
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/libs/phpleague-front.php:365
 msgid " Factfile"
-msgstr " Posible"
+msgstr " Ficha Técnica"
 
 #: /Applications/MAMP/htdocs/www/wp-dev/wp-content/plugins/phpleague/libs/phpleague-front.php:366
 msgid "Details"
