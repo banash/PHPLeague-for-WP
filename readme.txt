@@ -1,10 +1,21 @@
+=============================================================================================
+This is a fork of PHPLeague originally created by Maxime Dizerens
+Fork Author: Timothy Lim 
+Fork Page  : https://github.com/thewheat/PHPLeague-for-WP/
+Fork Reason: To implement changes that are more suited for my use case
+
+Note: if something doesn't work / doesn't display, try renaming the plugin directory to "phpleague" and please inform me of the issue as well
+
+I totally commend Maxime for creating this plugin which suits one of my clients use case, however I found that the plugin was a bit lacking in areas and not very usable. This is my attempt to make it more usable for the betterment of the plugin itself.
+=============================================================================================
+
 === PHPLeague ===
 Contributors: Maxime Dizerens
 Donate link: http://www.gunners.fr/
 Tags: phpleague, football, sport, league, championship, soccer, handball, volleyball, basketball, hockey, sports, leagues
 Requires at least: 3.3
 Tested up to: 3.3.1
-Stable tag: 1.4.6
+Stable tag: 1.4.6.1
 
 PHPLeague lets you managing your leagues without any hassles.
 
