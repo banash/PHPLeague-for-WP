@@ -46,7 +46,7 @@ http://twitter.com/mdizerens
 
 **Languages**
 
-* This plugin is currently available in English, French, German and Polish. Please help me translate it!
+* This plugin is currently available in English, French, German, Portuguese, Spanish and Polish. Please help me translate it!
 
 == Installation ==
 
@@ -101,7 +101,8 @@ For more information, check out the PHPLeague project website: <https://github.c
 * CHG: All characters are authorized
 * FIX: Database structure upgrade system has been improved
 * NEW: Database structure checking system
-* NEW: Spanish language is now available
+* NEW: Spanish is now available
+* NEW: Portuguese is now available
 
 = 1.4.5 =
 * NEW: Polish language is now available
