@@ -41,7 +41,7 @@ if ( ! class_exists('PHPLeague_Database')) {
         public function count_clubs()
         {
             global $wpdb;
-            return $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->club"));
+            return $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->club", NULL));
         }
     
         /**
@@ -222,7 +222,7 @@ if ( ! class_exists('PHPLeague_Database')) {
         public function count_leagues()
         {
             global $wpdb;
-            return $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->league"));
+            return $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->league", NULL));
         }
     
         /**
@@ -421,9 +421,6 @@ if ( ! class_exists('PHPLeague_Database')) {
 
             // Delete team charts data
             $wpdb->query($wpdb->prepare("DELETE FROM $wpdb->table_chart WHERE id_team = %d", $id_team));
-
-            // Delete players data
-            // $wpdb->query($wpdb->prepare("DELETE FROM $wpdb->player_team WHERE id_team = %d", $id_team));
 
             // Delete the players data associated to the team
             $wpdb->query($wpdb->prepare("DELETE a.*, b.*
@@ -1019,7 +1016,7 @@ if ( ! class_exists('PHPLeague_Database')) {
                     AND d.number <= $fixture
                     GROUP BY c.name";
 
-            foreach ($wpdb->get_results($wpdb->prepare($query)) as $row)
+            foreach ($wpdb->get_results($wpdb->prepare($query, NULL)) as $row)
             {
                 $name = trim($row->name);
                 $table[$name]['home_v'] = $row->count_home_id;
@@ -1049,7 +1046,7 @@ if ( ! class_exists('PHPLeague_Database')) {
                     AND d.number <= $fixture
                     GROUP BY c.name";
 
-            foreach ($wpdb->get_results($wpdb->prepare($query)) as $row)
+            foreach ($wpdb->get_results($wpdb->prepare($query, NULL)) as $row)
             {
                 $name = trim($row->name);
                 $table[$name]['home_l'] = $row->count_home_id;
@@ -1081,7 +1078,7 @@ if ( ! class_exists('PHPLeague_Database')) {
                     AND d.number <= $fixture
                     GROUP BY c.name";
 
-            foreach ($wpdb->get_results($wpdb->prepare($query)) as $row)
+            foreach ($wpdb->get_results($wpdb->prepare($query, NULL)) as $row)
             {
                 $name = trim($row->name);
                 $table[$name]['home_d'] = $row->count_home_id;
@@ -1111,7 +1108,7 @@ if ( ! class_exists('PHPLeague_Database')) {
                     AND d.number <= $fixture
                     GROUP BY c.name";
 
-            foreach ($wpdb->get_results($wpdb->prepare($query)) as $row)
+            foreach ($wpdb->get_results($wpdb->prepare($query, NULL)) as $row)
             {
                 $name = trim($row->name);
                 $table[$name]['away_v'] = $row->count_away_id;
@@ -1141,7 +1138,7 @@ if ( ! class_exists('PHPLeague_Database')) {
                     AND d.number <= $fixture
                     GROUP BY c.name";
 
-            foreach ($wpdb->get_results($wpdb->prepare($query)) as $row)
+            foreach ($wpdb->get_results($wpdb->prepare($query, NULL)) as $row)
             {
                 $name = trim($row->name);
                 $table[$name]['away_l'] = $row->count_away_id;
@@ -1173,7 +1170,7 @@ if ( ! class_exists('PHPLeague_Database')) {
                     AND d.number <= $fixture
                     GROUP BY c.name";
 
-            foreach ($wpdb->get_results($wpdb->prepare($query)) as $row)
+            foreach ($wpdb->get_results($wpdb->prepare($query, NULL)) as $row)
             {
                 $name = trim($row->name);
                 $table[$name]['away_d'] = $row->count_away_id;
@@ -1304,7 +1301,7 @@ if ( ! class_exists('PHPLeague_Database')) {
         public function count_players()
         {
             global $wpdb;
-            return $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->player"));
+            return $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->player", NULL));
         }
 
         /**
@@ -1732,7 +1729,7 @@ if ( ! class_exists('PHPLeague_Database')) {
                     break;
             }
             
-            return $wpdb->get_results($wpdb->prepare($query));
+            return $wpdb->get_results($wpdb->prepare($query, NULL));
         }
         
         /**
