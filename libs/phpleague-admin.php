@@ -40,7 +40,6 @@ if ( ! class_exists('PHPLeague_Admin')) {
             return '<div id="adminpanel"><div id="adminpanel-header"><div class="logo"><a href="'
                     .admin_url('admin.php?page=phpleague_overview').'"><img alt="" src="'
                     .plugins_url('assets/img/logo.png', dirname(__FILE__)).'" /></a></div><div class="theme-info">'
-                    //.plugins_url('phpleague/assets/img/logo.png').'" /></a></div><div class="theme-info">'
                     .'<span class="plugin">'.__('PHPLeague', 'phpleague').'</span>'
                     .'<span class="release">'.__('Release: ', 'phpleague').WP_PHPLEAGUE_VERSION.'</span>'
                     .'</div></div><div id="support-links"><ul><li class="changelog">'
@@ -333,16 +332,6 @@ if ( ! class_exists('PHPLeague_Admin')) {
                     'phpleague_about',
                     array($instance, 'admin_page')
                 );
-                // tim modified - 1
-                add_submenu_page(
-                    $parent,
-                    __('Settings (PHPLeague)', 'phpleague'),
-                    __('Settings', 'phpleague'),
-                    PHPLeague::$access,
-                    'phpleague_setting',
-                    array($instance, 'admin_page')
-                );
-                // tim modified - 0
                 
             }
         }

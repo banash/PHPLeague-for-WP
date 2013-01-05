@@ -15,8 +15,7 @@
                     }
                 }
             });
-// tim modified - 1
-/* disble visibility toggle on clicking items
+
             $(".adminpanel-menu-link").click(function(event) {
                 if ($(this).attr('href') == '#') {
                     event.preventDefault();
@@ -35,8 +34,7 @@
                     $(this).next().toggle('slow');
                 })
             });
-//*/
-// tim modified - 0
+
         },
         player : function() {
             $(".delete_player_team").click(function() {

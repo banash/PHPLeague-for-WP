@@ -123,7 +123,7 @@ if ( ! class_exists('PHPLeague')) {
          */
         public function define_constants()
         {
-            define('WP_PHPLEAGUE_VERSION', '1.4.6.1');
+            define('WP_PHPLEAGUE_VERSION', '1.4.7');
             define('WP_PHPLEAGUE_DB_VERSION', '1.3.2');
             define('WP_PHPLEAGUE_EDITION', $this->edition);
             define('WP_PHPLEAGUE_PATH', plugin_dir_path(__FILE__));
